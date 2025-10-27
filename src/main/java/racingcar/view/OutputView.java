@@ -5,6 +5,7 @@ import java.util.List;
 public class OutputView {
 
     public static void printRoundMessage() {
+        System.out.println();
         System.out.println("실행 결과");
     }
 
@@ -13,8 +14,8 @@ public class OutputView {
             for (String result : round) {
                 System.out.println(result);
             }
+            System.out.println();
         }
-        System.out.println();
     }
 
     public static void printWinners(List<String> winners) {
