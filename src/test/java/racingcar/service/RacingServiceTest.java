@@ -75,7 +75,7 @@ class RacingServiceTest {
         cars.get(1).move();
         cars.get(2).move();
 
-        List<String> winners = service.endRace(cars);
+        List<String> winners = service.endRace();
 
         // then
         assertThat(winners).isNotEmpty();

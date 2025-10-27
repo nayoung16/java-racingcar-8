@@ -31,7 +31,7 @@ public class RacingService {
         return result;
     }
 
-    public List<String> endRace(List<RacingCar> cars) {
+    public List<String> endRace() {
         int maxPosition = 0;
         List<String> wonCarNames = new ArrayList<>();
         for (RacingCar racingCar : cars) {
