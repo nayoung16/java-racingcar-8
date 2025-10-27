@@ -8,9 +8,11 @@ public class OutputView {
         System.out.println("실행 결과");
     }
 
-    public static void printRoundResult(List<String> result) {
-        for (String line : result) {
-            System.out.println(line);
+    public static void printRoundResult(List<List<String>> roundResults) {
+        for (List<String> round : roundResults) {
+            for (String result : round) {
+                System.out.println(result);
+            }
         }
         System.out.println();
     }

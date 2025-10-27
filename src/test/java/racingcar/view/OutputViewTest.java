@@ -37,7 +37,7 @@ class OutputViewTest {
         );
 
         // when
-        OutputView.printRoundResult(roundSnapshot);
+        OutputView.printRoundResult(List.of(roundSnapshot));
 
         // then
         String output = outContent.toString();
