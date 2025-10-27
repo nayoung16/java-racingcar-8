@@ -2,6 +2,8 @@ package racingcar.domain;
 
 import camp.nextstep.edu.missionutils.Randoms;
 
+import java.util.Map;
+
 public class RacingCar {
     private String carName;
     private int position;
@@ -10,11 +12,12 @@ public class RacingCar {
         this.carName = carName;
     }
 
-    public void move() {
+    public Map<Integer, Integer> move() {
         int randomNumber = Randoms.pickNumberInRange(0, 9);
         if (randomNumber >= 4) {
-            this.position += randomNumber;
+            this.position ++;
         }
+        return Map.of(randomNumber, this.position);
     }
 
     public String getCarName() {
